@@ -1,0 +1,20 @@
+img {
+  width: 50px;
+  height: 50px;
+}
+th,
+td {
+  text-align: center;
+}
+
+.zoom {
+  transition: transform 0.2s; /* Animation */
+
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(
+    1.2
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}

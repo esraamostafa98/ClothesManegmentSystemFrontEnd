@@ -1,0 +1,30 @@
+<div class="container-fluid">
+  <div class="row mt-5">
+    <div class="col-lg-4"></div>
+    <div class="col-lg-4 col-md-12">
+      <div *ngIf="clothe" class="card mb-3">
+        <img
+          [src]="imgurl + clothe.photoName"
+          [alt]="clothe.productName"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h2 class="card-title">{{ clothe.productName }}</h2>
+          <h1 class="card-title" style="text-align: right; font-weight: 400">
+            {{ clothe.price | currency }}
+          </h1>
+          <p class="card-text">
+            This is a wider card with supporting text below as a natural lead-in
+            to additional content. This content is a little bit longer.
+          </p>
+
+          <p class="card-text">
+            <a (click)="addToCart()" class="btn btn-success add-btn mt-3"
+              >Add To Cart</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

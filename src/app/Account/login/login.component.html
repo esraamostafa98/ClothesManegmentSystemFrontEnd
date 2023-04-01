@@ -1,0 +1,81 @@
+<div class="container-fluid">
+  <div class="row mt-5">
+    <div class="col-4"></div>
+    <div class="col-4">
+      <form
+        (ngSubmit)="Login()"
+        class="bg-light border p-4"
+        [formGroup]="loginForm"
+      >
+        <div><h2>Login</h2></div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            formControlName="email"
+            [ngClass]="{
+              'is-invalid':
+                (loginForm.get('email')?.touched ||
+                  loginForm.get('email')?.dirty) &&
+                !loginForm.get('email')?.valid
+            }"
+          />
+          <span class="invalid-feedback">
+            <span *ngIf="loginForm.get('email')?.errors?.required">
+              Email is required
+            </span>
+          </span>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+            formControlName="password"
+            [ngClass]="{
+              'is-invalid':
+                (loginForm.get('password')?.touched ||
+                  loginForm.get('password')?.dirty) &&
+                !loginForm.get('password')?.valid
+            }"
+          />
+          <span class="invalid-feedback">
+            <span *ngIf="loginForm.get('password')?.errors?.required">
+              Password is required
+            </span>
+          </span>
+        </div>
+        <div class="mb-3 form-check">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            id="exampleCheck1"
+            formControlName="RememberMe"
+          />
+          <label class="form-check-label" for="exampleCheck1"
+            >Remmeber Me</label
+          >
+        </div>
+
+        <div class="content1 mt-3">
+          <a routerLink="/register" class="text-center"
+            >don't have account ? Register Now</a
+          ><br />
+          <a routerLink="/forgetpassword" class="text-center"
+            >Forget Password ?</a
+          ><br />
+        </div>
+        <div class="content">
+          <button type="submit" class="btn btn-primary mx-auto mt-3">
+            Login
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

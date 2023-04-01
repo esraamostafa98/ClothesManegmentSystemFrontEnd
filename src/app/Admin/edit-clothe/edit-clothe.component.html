@@ -1,0 +1,38 @@
+<div class="container-fluid">
+  <div class="row mt-5">
+    <div class="col-2"></div>
+    <div class="col-6">
+      <form (ngSubmit)="onSubmit()" [formGroup]="clothesForm">
+        <div class="mb-3">
+          <label for="ProductName">Product Name</label>
+          <input
+            id="ProductName"
+            type="text"
+            class="form-control"
+            formControlName="productName"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="Price">Price</label>
+          <input
+            id="Price"
+            type="number"
+            class="form-control"
+            formControlName="price"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="Photo">Upload Photo</label>
+          <input
+            id="Photo"
+            type="file"
+            class="form-control"
+            (change)="onFileSelect($event)"
+          />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>

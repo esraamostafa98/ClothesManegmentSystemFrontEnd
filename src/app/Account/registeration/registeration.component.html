@@ -1,0 +1,100 @@
+<div class="container-fluid">
+  <div class="row mt-5">
+    <div class="col-4"></div>
+    <div class="col-4">
+      <form
+        (ngSubmit)="Register()"
+        class="bg-light border p-4"
+        [formGroup]="registerForm"
+      >
+        <div><h2>Register</h2></div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            formControlName="email"
+            [ngClass]="{
+              'is-invalid':
+                (registerForm.get('email')?.touched ||
+                  registerForm.get('email')?.dirty) &&
+                !registerForm.get('email')?.valid
+            }"
+          />
+          <span class="invalid-feedback">
+            <span *ngIf="registerForm.get('email')?.errors?.required">
+              Email is required
+            </span>
+          </span>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+            formControlName="password"
+            [ngClass]="{
+              'is-invalid':
+                (registerForm.get('password')?.touched ||
+                  registerForm.get('password')?.dirty) &&
+                !registerForm.get('password')?.valid
+            }"
+          />
+          <span class="invalid-feedback">
+            <span *ngIf="registerForm.get('password')?.errors?.required">
+              Password is required
+            </span>
+            <span *ngIf="registerForm.get('password')?.errors?.minlength">
+              Password is less than 5
+            </span>
+          </span>
+        </div>
+        <div class="mb-3">
+          <label for="confirmPassword" class="form-label"
+            >Confeirm Password</label
+          >
+          <input
+            type="password"
+            class="form-control"
+            id="confirmPassword"
+            formControlName="confirmPassword"
+            [ngClass]="{
+              'is-invalid':
+                (registerForm.get('confirmPassword')?.touched ||
+                  registerForm.get('confirmPassword')?.dirty) &&
+                !registerForm.get('confirmPassword')?.valid
+            }"
+          />
+
+          <span class="invalid-feedback">
+            <span *ngIf="registerForm.get('confirmPassword')?.errors?.required">
+              Confirm Password is required
+            </span>
+            <span
+              *ngIf="
+                registerForm.get('confirmPassword')?.errors
+                  ?.confirmPasswordValidator
+              "
+            >
+              Passsword and Confirm Password didn't match.
+            </span>
+          </span>
+        </div>
+
+        <div class="content mx-auto" style="width: 60%">
+          <a routerLink="/login" class="text-center">Have an account ? Login</a
+          ><br />
+        </div>
+        <div class="content mx-auto" style="width: 70%">
+          <button type="submit" class="btn btn-primary mx-auto mt-3">
+            Register
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
