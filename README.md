@@ -1,27 +1,11 @@
-# Clothes
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.3.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![Screenshot (748)](https://user-images.githubusercontent.com/58262174/229350136-f24f3582-185d-482d-8af4-364f7d4e3c08.png)
+![Screenshot (749)](https://user-images.githubusercontent.com/58262174/229350169-b495adb6-c120-4a6a-9032-6b4b65f3a39d.png)
+![Screenshot (750)](https://user-images.githubusercontent.com/58262174/229350186-69fe90f0-fd41-4ec7-93f9-cc28342add2b.png)
+![Screenshot (751)](https://user-images.githubusercontent.com/58262174/229350195-5ce26c41-f5e3-47cf-b14a-9e56e3d68455.png)
+![Screenshot (752)](https://user-images.githubusercontent.com/58262174/229350208-110e7802-0894-45d6-aaab-dddfd8434977.png)
+![Screenshot (753)](https://user-images.githubusercontent.com/58262174/229350221-1e75df73-4bfc-45ce-8da1-c615f7e21f41.png)
+![Screenshot (743)](https://user-images.githubusercontent.com/58262174/229350225-66f67312-f4d3-4623-8730-c186359a56b9.png)
+![Screenshot (744)](https://user-images.githubusercontent.com/58262174/229350270-7f940ecc-bd03-4bc2-b2d9-4a278f6c5ce2.png)
+![Screenshot (745)](https://user-images.githubusercontent.com/58262174/229350277-80cdf042-9545-4102-9e90-b1bafb4240f6.png)
+![Screenshot (746)](https://user-images.githubusercontent.com/58262174/229350282-f32b0073-2f85-4ec4-a336-728524183b5e.png)
+![Screenshot (747)](https://user-images.githubusercontent.com/58262174/229350288-172298d1-2bd9-48b5-a2b5-e38288669527.png)
